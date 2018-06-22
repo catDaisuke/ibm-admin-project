@@ -1,5 +1,8 @@
 <template>
     <div>
+      <b-container  fluid>
+        <b-row>
+        <b-col align-self="center">
         <table class="table table-fixed table-striped">
             <thead>
                 <tr>
@@ -20,7 +23,8 @@
                 </tr>
             </tbody>
         </table>
-
+        </b-col>
+        </b-row>
         <b-modal id="editModal">
             工事中
         </b-modal>
@@ -49,6 +53,7 @@
             </b-container>
             <b-btn v-on:click="submit">登録</b-btn>
         </b-modal>
+      </b-container>
     </div>
 </template>
 <script>
