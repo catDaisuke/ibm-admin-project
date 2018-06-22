@@ -90,7 +90,7 @@ export default {
       })
   },
   methods: {
-    helpCategory: function () {
+    helpCagetory: function () {
       var message = 'カテゴリは以下から選択してください<br>'
       for (var i = 0; i < this.$data.categoryList.length; i++) {
         message = message + this.$data.categoryList[i].categoryid + this.$data.categoryList[i].categoryname + '<br>'
@@ -114,8 +114,11 @@ export default {
         .then(response => {
           // JSON responses are automatically parsed.
           console.log(response.data)
-          alert('登録完了しました。画面を更新してください')
-
+          if(response === null || response.data === null || response.data === undefined || response.data === ''){
+            alert('入力に誤りがあります')
+          } else {
+            alert('登録完了しました。画面を更新してください')
+          }
         })
         .catch(e => {
           alert('登録に失敗しました')
