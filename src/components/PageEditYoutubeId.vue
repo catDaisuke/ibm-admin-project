@@ -2,7 +2,7 @@
     <div>
       <b-container  fluid>
         <b-row>
-        <b-col align-self="center">
+        <b-col align-self="center" sm="10">
         <table class="table table-fixed table-striped">
             <thead>
                 <tr>
