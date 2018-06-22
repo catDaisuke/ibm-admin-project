@@ -65,7 +65,7 @@ export default {
         youtubeid: null,
         youtubename: null,
         categoryid: null,
-        insuser: 'catDaisuke',
+        insuser: null,
         delflg: '0'
       }
     }
